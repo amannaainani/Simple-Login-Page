@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+  function myFunction(){
+
+var x1=document.getElementById('flabel').value;
+var x2=document.getElementById('llabel').value;
+
+alert("First Name : "+x1+"\nLast Name : "+x2);
+  }
+
+</script>
+
+<head>
+<style>
+.fname {
+  position: relative;
+  float: left;
+  padding-top: 25px;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.lname {
+  position: relative;
+  float: left;
+  padding-top: 25px;
+  left: 149px;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.flabel {
+  position: relative;
+  left: -126px;
+  padding: 3px;
+  border: 1px solid grey;
+}
+
+.llabel {
+  position: relative;
+  right: 95px;
+  padding: 3px;
+  border: 1px solid grey;
+}
+
+.email {
+  position: relative;
+  float: left;
+  padding-top: 25px;
+  font-family: Helvetica, sans-serif;
+  font-size: 13px;
+}
+.bxemail {
+  position: relative;
+  left: -127px;
+  padding: 3px;
+  border: 1px solid grey;
+}
+.button {
+  background-color: ##4CAF50;
+  padding: 9px 10px;
+  border: 1px ##4CAF50;
+  border-radius: 3px
+}
+.clear {
+  background-color: ##4CAF50;
+  padding: 9px 10px;
+  border: 1px ##4CAF50;
+  border-radius: 3px;
+}
+</style>
+</head>
+
+<body>
+
+<h1 style="font-family:Helvetica" >Customer Details:</h1>
+
+<h3 style="font-family:Helvetica">Full Name<span style="color:#ff0000; margin-left: 10px">*</span></h3>
+<form>
+   <input class="flabel" type= "text" id="flabel" name="fname">
+   <label class= "fname">First Name</label>
+   <input class="llabel" type="text" id="llabel" name="lname">
+   <label class="lname">Last Name</label> <br><br><br>
+<h3 style="font-family:Helvetica">E-mail</h3>
+  <label class= "email">example@yahoo.com</label>
+  <input class = "bxemail" type= "text" id="email" name="email" placeholder="example@yahoo.com"> <br><br><br><br>
+  <input class= "button" type="button" onclick="myFunction()" value="Submit">
+  <input class = "clear" type="reset" value="Clear Form"/>
+
+</form> 
+
+</body>
+</html>
